@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SeaDesign – плажни хавлии, плажни артикули и професионална сублимация върху текстил.">
+  <title>SeaDesign | Хавлии и сублимация върху текстил</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="#top" aria-label="SeaDesign начало">
+      <img src="assets/logo.jpg" alt="SeaDesign лого">
+      <span>SeaDesign</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Основна навигация">
+      <a href="#premium">Premium хавлии</a>
+      <a href="#microfiber">Microfiber</a>
+      <a href="#services">Услуги</a>
+      <a href="#beach">Плажни артикули</a>
+      <a href="#contact">Контакти</a>
+    </nav>
+    <button class="cart-button" id="cartOpen" type="button">Количка <span id="cartCount">0</span></button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero section-pad">
+    <div class="container">
+      <div class="hero-panel">
+        <div class="hero-copy">
+          <span class="eyebrow">Плажни артикули • Персонализация • Текстил</span>
+          <h1>Цветове, които остават.</h1>
+          <p>Плажни хавлии с готови дизайни, персонализирани хавлии и тениски и професионална сублимация върху текстил.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#premium">Разгледай хавлиите</a>
+            <a class="button ghost" href="#services">Изработка по поръчка</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad" id="premium">
+    <div class="container">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">Налични артикули</span>
+          <h2>Premium хавлии</h2>
+        </div>
+        <p>Размер 140 × 70 см • 60% памук / 40% полиестер • 12 €</p>
+      </div>
+      <div class="filter-row">
+        <button class="filter active" data-filter="all">Всички</button>
+        <button class="filter" data-filter="premium">Premium</button>
+        <button class="filter" data-filter="microfiber">Microfiber</button>
+      </div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="section-pad soft-section" id="microfiber">
+    <div class="container">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">Каталожна колекция</span>
+          <h2>Microfiber хавлии</h2>
+        </div>
+        <p>Размер 140 × 70 см • 100% полиестер • 5 €</p>
+      </div>
+      <div class="catalog-grid">
+        <button class="catalog-card" data-catalog="assets/catalogs/microfiber-1.jpeg"><img src="assets/catalogs/microfiber-1.jpeg" alt="Microfiber каталог страница 1"><span>Каталог 1</span></button>
+        <button class="catalog-card" data-catalog="assets/catalogs/microfiber-2.jpeg"><img src="assets/catalogs/microfiber-2.jpeg" alt="Microfiber каталог страница 2"><span>Каталог 2</span></button>
+        <button class="catalog-card" data-catalog="assets/catalogs/microfiber-3.jpeg"><img src="assets/catalogs/microfiber-3.jpeg" alt="Microfiber каталог страница 3"><span>Каталог 3</span></button>
+        <button class="catalog-card" data-catalog="assets/catalogs/microfiber-4.jpeg"><img src="assets/catalogs/microfiber-4.jpeg" alt="Microfiber каталог страница 4"><span>Каталог 4</span></button>
+      </div>
+      <button class="button dark" id="addMicrofiber" type="button">Добави Microfiber хавлия – 5 €</button>
+    </div>
+  </section>
+
+  <section class="section-pad" id="services">
+    <div class="container">
+      <div class="section-heading">
+        <div><span class="section-kicker">Какво предлагаме</span><h2>Услуги</h2></div>
+        <p>Само реалните услуги, които предлагате в момента.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card"><div class="service-icon">🏖️</div><h3>Персонализирани хавлии</h3><p>Изработка със снимка, текст, лого или индивидуален дизайн.</p></article>
+        <article class="service-card"><div class="service-icon">👕</div><h3>Персонализирани тениски</h3><p>Печат върху текстил по предоставена идея или готов файл.</p></article>
+        <article class="service-card"><div class="service-icon">🖨️</div><h3>Сублимация на текстил</h3><p>Хавлии, тениски, спално бельо и друг подходящ текстил.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad quality-section">
+    <div class="container quality-card">
+      <div>
+        <span class="section-kicker">Качество без компромис</span>
+        <h2>Професионално оборудване и устойчив резултат</h2>
+        <p>Работим с професионални италиански машини, световен лидер в индустриалната сублимация. Това ни позволява да постигнем изключително наситени цветове, висока детайлност и дълготрайност на печата върху текстил.</p>
+      </div>
+      <blockquote>„Удоволствието от ниската цена е краткотрайно. Горчивината от лошото качество остава дълго.“</blockquote>
+    </div>
+  </section>
+
+  <section class="section-pad" id="beach">
+    <div class="container">
+      <div class="section-heading"><div><span class="section-kicker">Скоро в каталога</span><h2>Плажни артикули</h2></div><p>Ще добавим реалните модели и цени, когато изпратиш снимките.</p></div>
+      <div class="coming-grid">
+        <article><span>👜</span><h3>Плажни чанти</h3><p>Каталогът се подготвя.</p></article>
+        <article><span>☂️</span><h3>Плажни чадъри</h3><p>Каталогът се подготвя.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad contact-section" id="contact">
+    <div class="container contact-card">
+      <div><span class="section-kicker light">SeaDesign</span><h2>Изпрати запитване</h2><p>Попълни формата. В тази версия поръчката се подготвя като текст, който можеш да изпратиш по имейл или съобщение.</p></div>
+      <form id="inquiryForm">
+        <label>Име<input name="name" required></label>
+        <label>Телефон<input name="phone" required></label>
+        <label>Какво желаете?<select name="service"><option>Персонализирана хавлия</option><option>Персонализирана тениска</option><option>Сублимация на текстил</option><option>Плажни артикули</option></select></label>
+        <label>Описание<textarea name="message" rows="4" required></textarea></label>
+        <button class="button primary" type="submit">Подготви запитването</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer><div class="container footer-row"><a class="brand" href="#top"><img src="assets/logo.jpg" alt=""><span>SeaDesign</span></a><span>© 2026 SeaDesign</span></div></footer>
+
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+  <div class="drawer-head"><h2>Вашата количка</h2><button id="cartClose" aria-label="Затвори">×</button></div>
+  <div id="cartItems" class="cart-items"></div>
+  <div class="cart-summary"><strong>Общо: <span id="cartTotal">0.00</span> €</strong><button class="button primary full" id="checkoutButton">Поръчай</button></div>
+</aside>
+
+<dialog id="catalogDialog"><button class="dialog-close" aria-label="Затвори">×</button><img id="catalogLarge" alt="Microfiber каталог"></dialog>
+<dialog id="checkoutDialog"><button class="dialog-close" aria-label="Затвори">×</button><div class="checkout-box"><h2>Данни за поръчка</h2><form id="checkoutForm"><label>Име<input name="name" required></label><label>Телефон<input name="phone" required></label><label>Адрес<textarea name="address" rows="3" required></textarea></label><label>Бележка<textarea name="note" rows="3"></textarea></label><button class="button primary full">Генерирай поръчка</button></form><textarea id="orderOutput" rows="12" readonly hidden></textarea><button class="button dark full" id="copyOrder" hidden>Копирай поръчката</button></div></dialog>
+
+<script src="app.js"></script>
+</body>
+</html>

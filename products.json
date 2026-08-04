@@ -1,0 +1,254 @@
+[
+  {
+    "id": "premium-01",
+    "name": "Премиум хавлия – дизайн 01",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/012EC773-65CC-4B09-9803-2BD9EBA9AEE6.jpeg"
+  },
+  {
+    "id": "premium-02",
+    "name": "Премиум хавлия – дизайн 02",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/0828AEC1-1D1D-4DB4-958C-58C5F733A282.jpeg"
+  },
+  {
+    "id": "premium-03",
+    "name": "Премиум хавлия – дизайн 03",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/09994956-A26E-4F24-A7FF-42DFEB6B1206.jpeg"
+  },
+  {
+    "id": "premium-04",
+    "name": "Премиум хавлия – дизайн 04",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/175AD82B-E9BA-4BD3-BC4E-0EF556BE81A2.jpeg"
+  },
+  {
+    "id": "premium-05",
+    "name": "Премиум хавлия – дизайн 05",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/1A011B15-D64F-4A0B-A165-D0EF74CA7D34.jpeg"
+  },
+  {
+    "id": "premium-06",
+    "name": "Премиум хавлия – дизайн 06",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/1F323938-DE27-4111-8007-FD502CB07981.jpeg"
+  },
+  {
+    "id": "premium-07",
+    "name": "Премиум хавлия – дизайн 07",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/24AF4FC9-7D6B-444F-B859-4B812913D52A.jpeg"
+  },
+  {
+    "id": "premium-08",
+    "name": "Премиум хавлия – дизайн 08",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/34525F77-878E-4680-9632-1B182B30BCD5.jpeg"
+  },
+  {
+    "id": "premium-09",
+    "name": "Премиум хавлия – дизайн 09",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/4A1C6C46-3B6C-4571-90CA-559E5AB7C945.jpeg"
+  },
+  {
+    "id": "premium-10",
+    "name": "Премиум хавлия – дизайн 10",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/5987C6DD-2E8D-44F7-91DE-D5972F31E0A5.jpeg"
+  },
+  {
+    "id": "premium-11",
+    "name": "Премиум хавлия – дизайн 11",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/5AC7712F-7666-49EC-B4C5-6259A1FBACE4.jpeg"
+  },
+  {
+    "id": "premium-12",
+    "name": "Премиум хавлия – дизайн 12",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/5C29A5C3-4B3F-44DB-BFCD-07F7F6473818.jpeg"
+  },
+  {
+    "id": "premium-13",
+    "name": "Премиум хавлия – дизайн 13",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/644A0F1E-3EF3-410F-AB3E-0FA3CC7E7EF1.jpeg"
+  },
+  {
+    "id": "premium-14",
+    "name": "Премиум хавлия – дизайн 14",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/6EA28B6B-1EAB-4CD2-B308-6368E80631BF.jpeg"
+  },
+  {
+    "id": "premium-15",
+    "name": "Премиум хавлия – дизайн 15",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/8033CB30-D592-4514-8EEB-6A8B20EF5A89.jpeg"
+  },
+  {
+    "id": "premium-16",
+    "name": "Премиум хавлия – дизайн 16",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/839F8FED-8A7F-4CD9-A68C-1C56B68D5C68.jpeg"
+  },
+  {
+    "id": "premium-17",
+    "name": "Премиум хавлия – дизайн 17",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/8BD95494-D245-4302-9CA0-5F277B8A6B3F.jpeg"
+  },
+  {
+    "id": "premium-18",
+    "name": "Премиум хавлия – дизайн 18",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/947C8B0F-1F4B-4A44-B278-597D3AEF6C99.jpeg"
+  },
+  {
+    "id": "premium-19",
+    "name": "Премиум хавлия – дизайн 19",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/A6203E46-C12C-4B92-9A34-4FC9F1758313.jpeg"
+  },
+  {
+    "id": "premium-20",
+    "name": "Премиум хавлия – дизайн 20",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/AAA55424-E66A-4A16-A0F8-B9C9F1B1CE5D.jpeg"
+  },
+  {
+    "id": "premium-21",
+    "name": "Премиум хавлия – дизайн 21",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/B274FF91-15F2-405F-857A-50915EB46A1B.jpeg"
+  },
+  {
+    "id": "premium-22",
+    "name": "Премиум хавлия – дизайн 22",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/BF23A54C-2E21-4A8F-A817-2B787D16F790.jpeg"
+  },
+  {
+    "id": "premium-23",
+    "name": "Премиум хавлия – дизайн 23",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/C9056670-3334-4E4D-B49B-2E4FCCDED238.jpeg"
+  },
+  {
+    "id": "premium-24",
+    "name": "Премиум хавлия – дизайн 24",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/DDDFEEAE-21E8-4B9B-B92D-3285D9734A9A.jpeg"
+  },
+  {
+    "id": "premium-25",
+    "name": "Премиум хавлия – дизайн 25",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/E82ACEFA-9436-4DF8-826E-6E1956651CC5.jpeg"
+  },
+  {
+    "id": "premium-26",
+    "name": "Премиум хавлия – дизайн 26",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/F6296818-BCE8-4C68-8B21-59D3ED0EFA72.jpeg"
+  },
+  {
+    "id": "premium-27",
+    "name": "Премиум хавлия – дизайн 27",
+    "type": "premium",
+    "price": 12,
+    "size": "140 × 70 см",
+    "material": "60% памук / 40% полиестер",
+    "image": "assets/premium/FDC8CAB6-062E-419D-9FFE-C663C41E7628.jpeg"
+  },
+  {
+    "id": "microfiber-catalog",
+    "name": "Микрофибърна хавлия – модел по каталог",
+    "type": "microfiber",
+    "price": 5,
+    "size": "140 × 70 см",
+    "material": "100% полиестер",
+    "image": "assets/catalogs/microfiber-1.jpeg"
+  }
+]
