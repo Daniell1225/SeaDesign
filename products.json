@@ -1,128 +1,43 @@
 {
   "premium": [
-    {
-      "id": 1,
-      "name": "Premium плажна хавлия",
-      "description": "140x70 см • 60% памук • 40% полиестер",
-      "price": "12 €",
-      "image": "assets/premium/IMG_7191.jpeg"
-    },
-    {
-      "id": 2,
-      "name": "Premium плажна хавлия",
-      "description": "140x70 см • 60% памук • 40% полиестер",
-      "price": "12 €",
-      "image": "assets/premium/IMG_7195.jpeg"
-    },
-    {
-      "id": 3,
-      "name": "Premium плажна хавлия",
-      "description": "140x70 см • 60% памук • 40% полиестер",
-      "price": "12 €",
-      "image": "assets/premium/IMG_7198.jpeg"
-    },
-    {
-      "id": 4,
-      "name": "Premium плажна хавлия",
-      "description": "140x70 см • 60% памук • 40% полиестер",
-      "price": "12 €",
-      "image": "assets/premium/IMG_7203.jpeg"
-    }
+    { "id": 1, "name": "Premium дизайн 1", "price": "12 €", "image": "assets/012EC773-65CC-4B09-9803-2BD9EBA9AEE6.jpeg" },
+    { "id": 2, "name": "Premium дизайн 2", "price": "12 €", "image": "assets/0828AEC1-1D1D-4DB4-958C-58C5F733A282.jpeg" },
+    { "id": 3, "name": "Premium дизайн 3", "price": "12 €", "image": "assets/08318157-B9A5-4D35-A718-56F2AF7353F9.jpg" },
+    { "id": 4, "name": "Premium дизайн 4", "price": "12 €", "image": "assets/09994956-A26E-4F24-A7FF-42DFEB6B1206.jpeg" },
+    { "id": 5, "name": "Premium дизайн 5", "price": "12 €", "image": "assets/0D755599-3206-4756-9601-30C21C2C097D.jpg" },
+    { "id": 6, "name": "Premium дизайн 6", "price": "12 €", "image": "assets/175AD82B-E9BA-4BD3-BC4E-0EF556BE81A2.jpeg" },
+    { "id": 7, "name": "Premium дизайн 7", "price": "12 €", "image": "assets/1A011B15-D64F-4A0B-A165-D0EF74CA7D34.jpeg" },
+    { "id": 8, "name": "Premium дизайн 8", "price": "12 €", "image": "assets/1F323938-DE27-4111-8007-FD502CB07981.jpeg" },
+    { "id": 9, "name": "Premium дизайн 9", "price": "12 €", "image": "assets/24AF4FC9-7D6B-444F-B859-4B812913D52A.jpeg" },
+    { "id": 10, "name": "Premium дизайн 10", "price": "12 €", "image": "assets/34525F77-878E-4680-9632-1B182B30BCD5.jpeg" },
+    { "id": 11, "name": "Premium дизайн 11", "price": "12 €", "image": "assets/4A1C6C46-3B6C-4571-90CA-559E5AB7C945.jpeg" },
+    { "id": 12, "name": "Premium дизайн 12", "price": "12 €", "image": "assets/5987C6DD-2E8D-44F7-91DE-D5972F31E0A5.jpeg" },
+    { "id": 13, "name": "Premium дизайн 13", "price": "12 €", "image": "assets/5AC7712F-7666-49EC-B4C5-6259A1FBACE4.jpeg" },
+    { "id": 14, "name": "Premium дизайн 14", "price": "12 €", "image": "assets/5C29A5C3-4B3F-44DB-BFCD-07F7F6473818.jpeg" },
+    { "id": 15, "name": "Premium дизайн 15", "price": "12 €", "image": "assets/644A0F1E-3EF3-410F-AB3E-0FA3CC7E7EF1.jpeg" },
+    { "id": 16, "name": "Premium дизайн 16", "price": "12 €", "image": "assets/6EA28B6B-1EAB-4CD2-B308-6368E80631BF.jpeg" },
+    { "id": 17, "name": "Premium дизайн 17", "price": "12 €", "image": "assets/74D65590-9C03-4FC3-AAE0-D27F81CDCB26.jpg" },
+    { "id": 18, "name": "Premium дизайн 18", "price": "12 €", "image": "assets/8033CB30-D592-4514-8EEB-6A8B20EF5A89.jpeg" },
+    { "id": 19, "name": "Premium дизайн 19", "price": "12 €", "image": "assets/839F8FED-8A7F-4CD9-A68C-1C56B68D5C68.jpeg" },
+    { "id": 20, "name": "Premium дизайн 20", "price": "12 €", "image": "assets/8BD95494-D245-4302-9CA0-5F277B8A6B3F.jpeg" },
+    { "id": 21, "name": "Premium дизайн 21", "price": "12 €", "image": "assets/947C8B0F-1F4B-4A44-B278-597D3AEF6C99.jpeg" },
+    { "id": 22, "name": "Premium дизайн 22", "price": "12 €", "image": "assets/A47065D6-4420-4694-BD75-8659DCA43992.jpg" },
+    { "id": 23, "name": "Premium дизайн 23", "price": "12 €", "image": "assets/A6203E46-C12C-4B92-9A34-4FC9F1758313.jpeg" },
+    { "id": 24, "name": "Premium дизайн 24", "price": "12 €", "image": "assets/AAA55424-E66A-4A16-A0F8-B9C9F1B1CE5D.jpeg" },
+    { "id": 25, "name": "Premium дизайн 25", "price": "12 €", "image": "assets/B274FF91-15F2-405F-857A-50915EB46A1B.jpeg" },
+    { "id": 26, "name": "Premium дизайн 26", "price": "12 €", "image": "assets/BF23A54C-2E21-4A8F-A817-2B787D16F790.jpeg" },
+    { "id": 27, "name": "Premium дизайн 27", "price": "12 €", "image": "assets/C9056670-3334-4E4D-B49B-2E4FCCDED238.jpeg" }
   ],
 
-  "microfiber": [
-    {
-      "id": 101,
-      "name": "Microfiber плажна хавлия",
-      "description": "140x70 см • 100% микрофибър",
-      "price": "5 €",
-      "image": "assets/microfiber/IMG_7177.jpeg"
-    },
-    {
-      "id": 102,
-      "name": "Microfiber плажна хавлия",
-      "description": "140x70 см • 100% микрофибър",
-      "price": "5 €",
-      "image": "assets/microfiber/IMG_7181.jpeg"
-    }
+  "microfiberCatalog": [
+    { "title": "Каталог микрофибърни хавлии", "image": "assets/C91F08D4-9843-4FA6-A9FD-2BD9DDB3828E.jpg", "price": "5 €" }
   ],
 
-  "kids": [
-    {
-      "id": 201,
-      "name": "Детска плажна хавлия",
-      "description": "Любими анимационни герои",
-      "price": "6 €",
-      "image": "assets/kids/1.jpg"
-    },
-    {
-      "id": 202,
-      "name": "Детска плажна хавлия",
-      "description": "Любими анимационни герои",
-      "price": "6 €",
-      "image": "assets/kids/2.jpg"
-    },
-    {
-      "id": 203,
-      "name": "Детска плажна хавлия",
-      "description": "Любими анимационни герои",
-      "price": "6 €",
-      "image": "assets/kids/3.jpg"
-    },
-    {
-      "id": 204,
-      "name": "Детска плажна хавлия",
-      "description": "Любими анимационни герои",
-      "price": "6 €",
-      "image": "assets/kids/4.jpg"
-    },
-    {
-      "id": 205,
-      "name": "Детска плажна хавлия",
-      "description": "Любими анимационни герои",
-      "price": "6 €",
-      "image": "assets/kids/5.jpg"
-    },
-    {
-      "id": 206,
-      "name": "Детска плажна хавлия",
-      "description": "Любими анимационни герои",
-      "price": "6 €",
-      "image": "assets/kids/6.jpg"
-    }
+  "kidsCatalog": [
+    { "title": "Каталог детски хавлии", "image": "assets/DDDFEEAE-21E8-4B9B-B92D-3285D9734A9A.jpeg", "price": "5 €" }
   ],
 
-  "bedding": [
-    {
-      "id": 301,
-      "name": "Спално бельо",
-      "description": "Микрофибър",
-      "price": "25 €",
-      "image": "assets/bedding/1.jpg"
-    },
-    {
-      "id": 302,
-      "name": "Спално бельо",
-      "description": "Микрофибър",
-      "price": "25 €",
-      "image": "assets/bedding/2.jpg"
-    }
-  ],
-
-  "poncho": [
-    {
-      "id": 401,
-      "name": "Детско пончо",
-      "description": "Микрофибър",
-      "price": "10 €",
-      "image": "assets/poncho/1.jpg"
-    },
-    {
-      "id": 402,
-      "name": "Детско пончо",
-      "description": "Микрофибър",
-      "price": "10 €",
-      "image": "assets/poncho/2.jpg"
-    }
+  "ponchoCatalog": [
+    { "title": "Каталог пончо", "image": "assets/E82ACEFA-9436-4DF8-826E-6E1956651CC5.jpeg", "price": "5 €" }
   ]
 }
