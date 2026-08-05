@@ -221,3 +221,22 @@ font-size:18px;
 }
 
 }
+
+.footerLogo{
+    width:180px;
+    display:block;
+    margin:0 auto 20px;
+}
+
+.footerImage{
+    width:100%;
+    max-width:700px;
+    display:block;
+    margin:25px auto;
+    border-radius:16px;
+}
+
+footer{
+    text-align:center;
+    padding:60px 20px;
+}
