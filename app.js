@@ -1,7 +1,7 @@
 const premiumProducts = document.getElementById("premiumProducts");
 const microProducts = document.getElementById("microProducts");
 const kidsProducts = document.getElementById("kidsProducts");
-const beddingProducts = document.getElementById("beddingProducts");
+const ponchoProducts = document.getElementById("beddingProducts");
 
 let cart = [];
 
@@ -15,7 +15,7 @@ fetch("products.json")
 
     renderCatalog(data.kidsCatalog, kidsProducts);
 
-    renderCatalog(data.ponchoCatalog, beddingProducts);
+    renderCatalog(data.ponchoCatalog, ponchoProducts);
 
 });
 
