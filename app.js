@@ -29,7 +29,7 @@ function renderProducts(products, container){
 
         <div class="product">
 
-            <img src="${product.image}" alt="${product.name}">
+            <img src="${product.image}" alt="${product.name}" onclick="openImage('${product.image}')">
 
             <div class="productContent">
 
@@ -64,7 +64,7 @@ function renderCatalog(catalog,container){
 
         <div class="product">
 
-            <img src="${item.image}" alt="${item.title}">
+            <img src="${item.image}" alt="${item.title}" onclick="openImage('${item.image}')">
 
             <div class="productContent">
 
@@ -119,3 +119,11 @@ document.getElementById("cartBtn").onclick=function(){
     alert(total);
 
 };
+function openImage(src) {
+    document.getElementById("modalImage").src = src;
+    document.getElementById("imageModal").style.display = "flex";
+}
+
+function closeImage() {
+    document.getElementById("imageModal").style.display = "none";
+}
