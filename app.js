@@ -96,29 +96,87 @@ function addToCart(product){
 
     document.getElementById("count").innerHTML=cart.length;
 
+    renderCart();
+
 }
 
-document.getElementById("cartBtn").onclick=function(){
+document.getElementById("cartBtn").onclick = function () {
+
+    renderCart();
+
+    document.getElementById("cartModal").style.display = "flex";
+
+};
+
+function closeCart(){
+
+    document.getElementById("cartModal").style.display = "none";
+
+}
+
+function renderCart(){
+
+    const cartItems=document.getElementById("cartItems");
+
+    const total=document.getElementById("cartTotal");
+
+    cartItems.innerHTML="";
+
+    let sum=0;
 
     if(cart.length===0){
 
-        alert("Количката е празна.");
+        cartItems.innerHTML="<p>Количката е празна.</p>";
+
+        total.innerHTML="0 €";
 
         return;
 
     }
 
-    let total="";
+    cart.forEach((item,index)=>{
 
-    cart.forEach(item=>{
+        const price=parseFloat(item.price);
 
-        total+=item.name+" - "+item.price+"\n";
+        sum+=price;
+
+        cartItems.innerHTML+=`
+
+        <div class="cartItem">
+
+            <div>
+
+                <strong>${item.name}</strong><br>
+
+                ${item.price}
+
+            </div>
+
+            <button onclick="removeItem(${index})">
+
+                🗑
+
+            </button>
+
+        </div>
+
+        `;
 
     });
 
-    alert(total);
+    total.innerHTML=sum.toFixed(2)+" €";
 
-};
+}
+
+function removeItem(index){
+
+    cart.splice(index,1);
+
+    document.getElementById("count").innerHTML=cart.length;
+
+    renderCart();
+
+}
 function openImage(src) {
     document.getElementById("modalImage").src = src;
     document.getElementById("imageModal").style.display = "flex";
