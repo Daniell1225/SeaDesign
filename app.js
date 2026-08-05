@@ -92,9 +92,19 @@ function renderCatalog(catalog,container){
 
 function addToCart(product){
 
-    cart.push(product);
+    const existing = cart.find(item => item.id === product.id);
 
-    document.getElementById("count").innerHTML=cart.length;
+    if(existing){
+        existing.quantity++;
+    }else{
+        cart.push({
+            ...product,
+            quantity:1
+        });
+    }
+
+    document.getElementById("count").innerHTML =
+        cart.reduce((sum,item)=>sum+item.quantity,0);
 
     renderCart();
 
@@ -138,7 +148,7 @@ function renderCart(){
 
         const price=parseFloat(item.price);
 
-        sum+=price;
+        sum += price * item.quantity;
 
         cartItems.innerHTML+=`
 
@@ -148,15 +158,19 @@ function renderCart(){
 
                 <strong>${item.name}</strong><br>
 
-                ${item.price}
+                ${item.quantity} × ${item.price}
 
             </div>
 
-            <button onclick="removeItem(${index})">
+            <div>
 
-                🗑
+ <button onclick="changeQuantity(${index},-1)">−</button>
 
-            </button>
+<button onclick="changeQuantity(${index},1)">+</button>
+
+<button onclick="removeItem(${index})">🗑</button>
+
+</div>
 
         </div>
 
@@ -173,6 +187,22 @@ function removeItem(index){
     cart.splice(index,1);
 
     document.getElementById("count").innerHTML=cart.length;
+
+    renderCart();
+
+}
+function changeQuantity(index,value){
+
+    cart[index].quantity += value;
+
+    if(cart[index].quantity<=0){
+
+        cart.splice(index,1);
+
+    }
+
+    document.getElementById("count").innerHTML =
+        cart.reduce((sum,item)=>sum+item.quantity,0);
 
     renderCart();
 
