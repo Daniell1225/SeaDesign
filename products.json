@@ -2,30 +2,30 @@
   "premium": [
     {
       "id": 1,
-      "name": "Premium плажна кърпа",
-      "description": "Висококачествена микрофибърна кърпа с уникален дизайн.",
-      "price": 35,
+      "name": "Premium плажна хавлия",
+      "description": "140x70 см • 60% памук • 40% полиестер",
+      "price": "12 €",
       "image": "assets/premium/IMG_7191.jpeg"
     },
     {
       "id": 2,
-      "name": "Premium плажна кърпа",
-      "description": "Мека, лека и бързосъхнеща.",
-      "price": 35,
+      "name": "Premium плажна хавлия",
+      "description": "140x70 см • 60% памук • 40% полиестер",
+      "price": "12 €",
       "image": "assets/premium/IMG_7195.jpeg"
     },
     {
       "id": 3,
-      "name": "Premium плажна кърпа",
-      "description": "Премиум качество и ярки цветове.",
-      "price": 35,
+      "name": "Premium плажна хавлия",
+      "description": "140x70 см • 60% памук • 40% полиестер",
+      "price": "12 €",
       "image": "assets/premium/IMG_7198.jpeg"
     },
     {
       "id": 4,
-      "name": "Premium плажна кърпа",
-      "description": "Идеална за море и басейн.",
-      "price": 35,
+      "name": "Premium плажна хавлия",
+      "description": "140x70 см • 60% памук • 40% полиестер",
+      "price": "12 €",
       "image": "assets/premium/IMG_7203.jpeg"
     }
   ],
@@ -33,16 +33,16 @@
   "microfiber": [
     {
       "id": 101,
-      "name": "Микрофибърна кърпа",
-      "description": "Бързосъхнеща микрофибърна кърпа.",
-      "price": 25,
+      "name": "Microfiber плажна хавлия",
+      "description": "140x70 см • 100% микрофибър",
+      "price": "5 €",
       "image": "assets/microfiber/IMG_7177.jpeg"
     },
     {
       "id": 102,
-      "name": "Микрофибърна кърпа",
-      "description": "Компактна и лека.",
-      "price": 25,
+      "name": "Microfiber плажна хавлия",
+      "description": "140x70 см • 100% микрофибър",
+      "price": "5 €",
       "image": "assets/microfiber/IMG_7181.jpeg"
     }
   ],
@@ -50,24 +50,45 @@
   "kids": [
     {
       "id": 201,
-      "name": "Детска кърпа",
-      "description": "Любими герои за най-малките.",
-      "price": 22,
+      "name": "Детска плажна хавлия",
+      "description": "Любими анимационни герои",
+      "price": "6 €",
       "image": "assets/kids/1.jpg"
     },
     {
       "id": 202,
-      "name": "Детска кърпа",
-      "description": "Мека и цветна.",
-      "price": 22,
+      "name": "Детска плажна хавлия",
+      "description": "Любими анимационни герои",
+      "price": "6 €",
       "image": "assets/kids/2.jpg"
     },
     {
       "id": 203,
-      "name": "Детска кърпа",
-      "description": "Високо качество.",
-      "price": 22,
+      "name": "Детска плажна хавлия",
+      "description": "Любими анимационни герои",
+      "price": "6 €",
       "image": "assets/kids/3.jpg"
+    },
+    {
+      "id": 204,
+      "name": "Детска плажна хавлия",
+      "description": "Любими анимационни герои",
+      "price": "6 €",
+      "image": "assets/kids/4.jpg"
+    },
+    {
+      "id": 205,
+      "name": "Детска плажна хавлия",
+      "description": "Любими анимационни герои",
+      "price": "6 €",
+      "image": "assets/kids/5.jpg"
+    },
+    {
+      "id": 206,
+      "name": "Детска плажна хавлия",
+      "description": "Любими анимационни герои",
+      "price": "6 €",
+      "image": "assets/kids/6.jpg"
     }
   ],
 
@@ -75,16 +96,33 @@
     {
       "id": 301,
       "name": "Спално бельо",
-      "description": "Мек микрофибър с красив дизайн.",
-      "price": 65,
+      "description": "Микрофибър",
+      "price": "25 €",
       "image": "assets/bedding/1.jpg"
     },
     {
       "id": 302,
       "name": "Спално бельо",
-      "description": "Премиум комплект.",
-      "price": 69,
+      "description": "Микрофибър",
+      "price": "25 €",
       "image": "assets/bedding/2.jpg"
+    }
+  ],
+
+  "poncho": [
+    {
+      "id": 401,
+      "name": "Детско пончо",
+      "description": "Микрофибър",
+      "price": "10 €",
+      "image": "assets/poncho/1.jpg"
+    },
+    {
+      "id": 402,
+      "name": "Детско пончо",
+      "description": "Микрофибър",
+      "price": "10 €",
+      "image": "assets/poncho/2.jpg"
     }
   ]
 }
