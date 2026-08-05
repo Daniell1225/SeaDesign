@@ -1,3 +1,4 @@
+emailjs.init("FnQmL6YiQLs-N5CBo");
 const premiumProducts = document.getElementById("premiumProducts");
 const microProducts = document.getElementById("microProducts");
 const kidsProducts = document.getElementById("kidsProducts");
