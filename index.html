@@ -102,7 +102,67 @@
 <div id="imageModal" class="imageModal" onclick="closeImage()">
     <img id="modalImage">
 </div>
-<script src="app.js"></script>
+<div id="cartModal" class="cartModal">
+
+    <div class="cartWindow">
+
+        <div class="cartHeader">
+
+            <h2>🛒 Количка</h2>
+
+            <button class="closeCart" onclick="closeCart()">✕</button>
+
+        </div>
+
+        <div id="cartItems"></div>
+
+        <div class="cartTotal">
+
+            Общо:
+
+            <span id="cartTotal">0 €</span>
+
+        </div>
+
+        <form id="orderForm">
+
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Име"
+                required>
+
+            <input
+                type="tel"
+                id="customerPhone"
+                placeholder="Телефон"
+                required>
+
+            <input
+                type="email"
+                id="customerEmail"
+                placeholder="Имейл">
+
+            <textarea
+                id="customerAddress"
+                placeholder="Адрес"></textarea>
+
+            <textarea
+                id="customerNote"
+                placeholder="Бележка към поръчката"></textarea>
+
+            <button
+                type="button"
+                id="sendOrderBtn">
+                Изпрати поръчката
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+    <script src="app.js"></script>
 
 </body>
 </html>
