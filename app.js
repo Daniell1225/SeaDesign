@@ -6,93 +6,116 @@ const beddingProducts = document.getElementById("beddingProducts");
 let cart = [];
 
 fetch("products.json")
-.then(r => r.json())
+.then(response => response.json())
 .then(data => {
 
-render(data.premium,premiumProducts);
+    renderProducts(data.premium, premiumProducts);
 
-render(data.microfiber,microProducts);
+    renderCatalog(data.microfiberCatalog, microProducts);
 
-render(data.kids,kidsProducts);
+    renderCatalog(data.kidsCatalog, kidsProducts);
 
-render(data.bedding,beddingProducts);
-
-});
-
-function render(products,target){
-
-products.forEach(product=>{
-
-const card=document.createElement("div");
-
-card.className="product";
-
-card.innerHTML=`
-
-<img src="${product.image}" alt="${product.name}">
-
-<div class="productContent">
-
-<h3>${product.name}</h3>
-
-<p>${product.description}</p>
-
-<div class="price">${product.price} лв.</div>
-
-<button class="buyBtn">
-
-Добави в количката
-
-</button>
-
-</div>
-
-`;
-
-card.querySelector("button").onclick=()=>{
-
-cart.push(product);
-
-updateCart();
-
-};
-
-target.appendChild(card);
+    renderCatalog(data.ponchoCatalog, beddingProducts);
 
 });
 
+function renderProducts(products, container){
+
+    container.innerHTML="";
+
+    products.forEach(product=>{
+
+        container.innerHTML+=`
+
+        <div class="product">
+
+            <img src="${product.image}" alt="${product.name}">
+
+            <div class="productContent">
+
+                <h3>${product.name}</h3>
+
+                <p>140 × 70 см<br>60% памук • 40% полиестер</p>
+
+                <div class="price">${product.price}</div>
+
+                <button class="buyBtn"
+                onclick='addToCart(${JSON.stringify(product)})'>
+                Добави в количката
+                </button>
+
+            </div>
+
+        </div>
+
+        `;
+
+    });
+
 }
 
-function updateCart(){
+function renderCatalog(catalog,container){
 
-document.getElementById("count").innerText=cart.length;
+    container.innerHTML="";
+
+    catalog.forEach(item=>{
+
+        container.innerHTML+=`
+
+        <div class="product">
+
+            <img src="${item.image}" alt="${item.title}">
+
+            <div class="productContent">
+
+                <h3>${item.title}</h3>
+
+                <p>
+
+                Изберете желания дизайн по номер
+                от каталога и го посочете при
+                поръчката.
+
+                </p>
+
+                <div class="price">${item.price}</div>
+
+            </div>
+
+        </div>
+
+        `;
+
+    });
 
 }
 
-document.getElementById("cartBtn").onclick=()=>{
+function addToCart(product){
 
-if(cart.length===0){
+    cart.push(product);
 
-alert("Количката е празна.");
-
-return;
+    document.getElementById("count").innerHTML=cart.length;
 
 }
 
-let text="Вашата количка:\n\n";
+document.getElementById("cartBtn").onclick=function(){
 
-let total=0;
+    if(cart.length===0){
 
-cart.forEach(item=>{
+        alert("Количката е празна.");
 
-text+=item.name+" - "+item.price+" лв.\n";
+        return;
 
-total+=item.price;
+    }
 
-});
+    let total="";
 
-text+="\nОбщо: "+total+" лв.";
+    cart.forEach(item=>{
 
-alert(text);
+        total+=item.name+" - "+item.price+"\n";
+
+    });
+
+    alert(total);
 
 };
