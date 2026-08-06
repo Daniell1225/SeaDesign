@@ -187,7 +187,8 @@ function removeItem(index){
 
     cart.splice(index,1);
 
-    document.getElementById("count").innerHTML=cart.length;
+    document.getElementById("count").innerHTML =
+    cart.reduce((sum,item)=>sum+item.quantity,0);
 
     renderCart();
 
@@ -216,3 +217,64 @@ function openImage(src) {
 function closeImage() {
     document.getElementById("imageModal").style.display = "none";
 }
+document.getElementById("sendOrderBtn").addEventListener("click", function () {
+
+    if(cart.length===0){
+        alert("Количката е празна.");
+        return;
+    }
+
+    const customerName = document.getElementById("customerName").value.trim();
+    const customerPhone = document.getElementById("customerPhone").value.trim();
+    const customerEmail = document.getElementById("customerEmail").value.trim();
+    const customerAddress = document.getElementById("customerAddress").value.trim();
+    const customerNote = document.getElementById("customerNote").value.trim();
+
+    if(customerName==="" || customerPhone===""){
+        alert("Моля попълнете име и телефон.");
+        return;
+    }
+
+    const order = cart.map(item =>
+        `${item.name} × ${item.quantity} - ${item.price}`
+    ).join("\n");
+
+    const total = cart.reduce((sum,item)=>
+        sum + parseFloat(item.price) * item.quantity
+    ,0);
+
+    emailjs.send(
+        "service_w97m077",
+        "template_tv00i1d",
+        {
+            customer_name: customerName,
+            customer_phone: customerPhone,
+            customer_email: customerEmail,
+            customer_address: customerAddress,
+            customer_note: customerNote,
+            order: order,
+            total: total.toFixed(2) + " €"
+        }
+    ).then(function(){
+
+        alert("✅ Поръчката беше изпратена успешно!");
+
+        cart=[];
+
+        document.getElementById("count").innerHTML="0";
+
+        renderCart();
+
+        document.getElementById("orderForm").reset();
+
+        closeCart();
+
+    }).catch(function(error){
+
+        console.log(error);
+
+        alert("❌ Грешка при изпращането на поръчката.");
+
+    });
+
+});
