@@ -243,37 +243,35 @@ document.getElementById("sendOrderBtn").addEventListener("click", function () {
         sum + parseFloat(item.price) * item.quantity
     ,0);
 
-Promise.all([
+emailjs.send(
+    "service_w97mo77",
+    "template_tv00i1d",
+    {
+        customer_name: customerName,
+        customer_phone: customerPhone,
+        customer_email: customerEmail,
+        customer_address: customerAddress,
+        customer_note: customerNote,
+        order: order,
+        total: total.toFixed(2) + " €"
+    }
+).then(function () {
 
-    emailjs.send(
-        "service_w97mo77",
-        "template_tv00i1d",
-        {
-            customer_name: customerName,
-            customer_phone: customerPhone,
-            customer_email: customerEmail,
-            customer_address: customerAddress,
-            customer_note: customerNote,
-            order: order,
-            total: total.toFixed(2) + " €"
-        }
-    ),
+return emailjs.send(
+    "service_w97mo77",
+    "template_tv00i1d",
+    {
+        customer_name: customerName,
+        customer_phone: customerPhone,
+        customer_email: customerEmail,
+        customer_address: customerAddress,
+        customer_note: customerNote,
+        order: order,
+        total: total.toFixed(2) + " €"
+    }
+);
 
-    emailjs.send(
-        "service_w97mo77",
-        "template_ep7pskm",
-        {
-            customer_name: customerName,
-            customer_phone: customerPhone,
-            customer_email: customerEmail,
-            customer_address: customerAddress,
-            customer_note: customerNote,
-            order: order,
-            total: total.toFixed(2) + " €"
-        }
-    )
-
-]).then(function () {
+}).then(function () {
 
     alert("✅ Поръчката беше изпратена успешно!");
 
@@ -292,5 +290,7 @@ Promise.all([
     console.log(error);
 
     alert(JSON.stringify(error));
+
+});
 
 });
