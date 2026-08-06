@@ -244,7 +244,7 @@ document.getElementById("sendOrderBtn").addEventListener("click", function () {
     ,0);
 
     emailjs.send(
-        "service_w97m077",
+        "service_w97mo77",
         "template_tv00i1d",
         {
             customer_name: customerName,
