@@ -256,9 +256,9 @@ emailjs.send(
         total: total.toFixed(2) + " €"
     }
 )
-.then(function () {
+.then(function (result) {
 
-    console.log("✅ Имейлът към SeaDesign е изпратен.");
+    console.log("Първият:", result);
 
     return emailjs.send(
         "service_w97mo77",
@@ -275,27 +275,13 @@ emailjs.send(
     );
 
 })
-.then(function () {
+.then(function (result) {
 
-    console.log("✅ Имейлът към клиента е изпратен.");
-
-    alert("✅ Поръчката беше изпратена успешно!");
-
-    cart = [];
-
-    document.getElementById("count").innerHTML = "0";
-
-    renderCart();
-
-    document.getElementById("orderForm").reset();
-
-    closeCart();
+    console.log("Вторият:", result);
 
 })
 .catch(function (error) {
 
-    console.error(error);
-
-    alert("Грешка: " + JSON.stringify(error));
+    console.log(error);
 
 });
