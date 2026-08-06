@@ -271,10 +271,11 @@ document.getElementById("sendOrderBtn").addEventListener("click", function () {
 
     }).catch(function(error){
 
-        console.log(error);
+    console.error("EmailJS error:", error);
 
-        alert("❌ Грешка при изпращането на поръчката.");
-
-    });
+    alert(
+        "Грешка при изпращането:\n" +
+        (error.text || error.message || JSON.stringify(error))
+    );
 
 });
