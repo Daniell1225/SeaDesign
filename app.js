@@ -280,4 +280,3 @@ document.getElementById("sendOrderBtn").addEventListener("click", function () {
 });
 
 });
-
