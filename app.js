@@ -259,7 +259,7 @@ emailjs.send(
 
 return emailjs.send(
     "service_w97mo77",
-    "template_ep7pskm",
+    "template_tv00i1d",
     {
         customer_name: customerName,
         customer_phone: customerPhone,
