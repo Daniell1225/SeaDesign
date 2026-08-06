@@ -271,11 +271,8 @@ document.getElementById("sendOrderBtn").addEventListener("click", function () {
 
     }).catch(function(error){
 
-    console.error("EmailJS error:", error);
+    console.log(error);
 
-    alert(
-        "Грешка при изпращането:\n" +
-        (error.text || error.message || JSON.stringify(error))
-    );
+    alert(JSON.stringify(error));
 
 });
