@@ -275,8 +275,9 @@ document.getElementById("sendOrderBtn").addEventListener("click", function () {
 
     alert(JSON.stringify(error));
 
-});
+
     
 });
 
+});
 
