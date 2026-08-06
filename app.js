@@ -255,22 +255,29 @@ emailjs.send(
         order: order,
         total: total.toFixed(2) + " €"
     }
-).then(function () {
+)
+.then(function () {
 
-return emailjs.send(
-    "service_w97mo77",
-    "template_ep7pskm",
-    {
-        customer_name: customerName,
-        customer_phone: customerPhone,
-        customer_email: customerEmail,
-        customer_address: customerAddress,
-        customer_note: customerNote,
-        order: order,
-        total: total.toFixed(2) + " €"
-    }
-);
-}).then(function () {
+    console.log("✅ Имейлът към SeaDesign е изпратен.");
+
+    return emailjs.send(
+        "service_w97mo77",
+        "template_ep7pskm",
+        {
+            customer_name: customerName,
+            customer_phone: customerPhone,
+            customer_email: customerEmail,
+            customer_address: customerAddress,
+            customer_note: customerNote,
+            order: order,
+            total: total.toFixed(2) + " €"
+        }
+    );
+
+})
+.then(function () {
+
+    console.log("✅ Имейлът към клиента е изпратен.");
 
     alert("✅ Поръчката беше изпратена успешно!");
 
@@ -284,12 +291,11 @@ return emailjs.send(
 
     closeCart();
 
-}).catch(function (error) {
+})
+.catch(function (error) {
 
-    console.log(error);
+    console.error(error);
 
-    alert(JSON.stringify(error));
-
-});
+    alert("Грешка: " + JSON.stringify(error));
 
 });
