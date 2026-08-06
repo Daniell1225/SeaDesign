@@ -261,7 +261,7 @@ Promise.all([
 
     emailjs.send(
         "service_w97mo77",
-        "template_tv00i1d",
+        "template_ep7pskm",
         {
             customer_name: customerName,
             customer_phone: customerPhone,
