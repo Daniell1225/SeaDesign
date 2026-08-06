@@ -257,14 +257,19 @@ emailjs.send(
     }
 ).then(function () {
 
-    return emailjs.send(
-        "service_w97mo77",
-        "template_ep7pskm",
-        {
-            customer_name: customerName,
-            customer_email: customerEmail
-        }
-    );
+return emailjs.send(
+    "service_w97mo77",
+    "template_ep7pskm",
+    {
+        customer_name: customerName,
+        customer_phone: customerPhone,
+        customer_email: customerEmail,
+        customer_address: customerAddress,
+        customer_note: customerNote,
+        order: order,
+        total: total.toFixed(2) + " €"
+    }
+);
 
 }).then(function () {
 
