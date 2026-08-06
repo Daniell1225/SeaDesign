@@ -256,32 +256,25 @@ emailjs.send(
         total: total.toFixed(2) + " €"
     }
 )
-.then(function (result) {
+.then(function () {
 
-    console.log("Първият:", result);
+    alert("✅ Поръчката беше изпратена успешно!");
 
-    return emailjs.send(
-        "service_w97mo77",
-        "template_ep7pskm",
-        {
-            customer_name: customerName,
-            customer_phone: customerPhone,
-            customer_email: customerEmail,
-            customer_address: customerAddress,
-            customer_note: customerNote,
-            order: order,
-            total: total.toFixed(2) + " €"
-        }
-    );
+    cart = [];
 
-})
-.then(function (result) {
+    document.getElementById("count").innerHTML = "0";
 
-    console.log("Вторият:", result);
+    renderCart();
+
+    document.getElementById("orderForm").reset();
+
+    closeCart();
 
 })
 .catch(function (error) {
 
-    console.log(error);
+    console.error(error);
+
+    alert("Грешка: " + JSON.stringify(error));
 
 });
