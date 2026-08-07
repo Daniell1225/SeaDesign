@@ -235,6 +235,8 @@ document.getElementById("sendOrderBtn").addEventListener("click", function () {
     btn.disabled = true;
     btn.innerText = "Изпращане...";
 
+Promise.all([
+
     emailjs.send(
         "service_w97mo77",
         "template_tv00i1d",
@@ -247,29 +249,42 @@ document.getElementById("sendOrderBtn").addEventListener("click", function () {
             order: order,
             total: total.toFixed(2) + " €"
         }
+    ),
+
+    emailjs.send(
+        "service_w97mo77",
+        "template_ep7pskm",
+        {
+            customer_name: customerName,
+            customer_email: customerEmail,
+            order: order,
+            total: total.toFixed(2) + " €"
+        }
     )
-    .then(function(){
 
-        alert("✅ Поръчката беше изпратена успешно!");
+])
+.then(function () {
 
-        cart = [];
+    alert("✅ Поръчката беше изпратена успешно!");
 
-        document.getElementById("count").innerHTML = "0";
+    cart = [];
 
-        renderCart();
+    document.getElementById("count").innerHTML = "0";
 
-        document.getElementById("orderForm").reset();
+    renderCart();
 
-        closeCart();
+    document.getElementById("orderForm").reset();
 
-    })
-    .catch(function(error){
+    closeCart();
 
-        console.error(error);
+})
+.catch(function (error) {
 
-        alert("Грешка: " + JSON.stringify(error));
+    console.error(error);
 
-    })
+    alert("Грешка: " + JSON.stringify(error));
+
+});
     .finally(function(){
 
         btn.disabled = false;
