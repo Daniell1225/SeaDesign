@@ -5,276 +5,306 @@ const kidsProducts = document.getElementById("kidsProducts");
 const ponchoProducts = document.getElementById("beddingProducts");
 
 let cart = [];
+let sending = false;
 
 fetch("products.json")
 .then(response => response.json())
 .then(data => {
 
-    renderProducts(data.premium, premiumProducts);
+```
+renderProducts(data.premium, premiumProducts);
 
-    renderCatalog(data.microfiberCatalog, microProducts);
+renderCatalog(data.microfiberCatalog, microProducts);
 
-    renderCatalog(data.kidsCatalog, kidsProducts);
+renderCatalog(data.kidsCatalog, kidsProducts);
 
-    renderCatalog(data.ponchoCatalog, ponchoProducts);
+renderCatalog(data.ponchoCatalog, ponchoProducts);
+```
 
 });
 
 function renderProducts(products, container){
 
-    container.innerHTML="";
+```
+container.innerHTML="";
 
-    products.forEach(product=>{
+products.forEach(product=>{
 
-        container.innerHTML+=`
+    container.innerHTML+=`
 
-        <div class="product">
+    <div class="product">
 
-            <img src="${product.image}" alt="${product.name}" onclick="openImage('${product.image}')">
+        <img src="${product.image}" alt="${product.name}" onclick="openImage('${product.image}')">
 
-            <div class="productContent">
+        <div class="productContent">
 
-                <h3>${product.name}</h3>
+            <h3>${product.name}</h3>
 
-                <p>140 × 70 см<br>60% памук • 40% полиестер</p>
+            <p>140 × 70 см<br>60% памук • 40% полиестер</p>
 
-                <div class="price">${product.price}</div>
+            <div class="price">${product.price}</div>
 
-                <button class="buyBtn"
-                onclick='addToCart(${JSON.stringify(product)})'>
-                Добави в количката
-                </button>
-
-            </div>
+            <button class="buyBtn"
+            onclick='addToCart(${JSON.stringify(product)})'>
+            Добави в количката
+            </button>
 
         </div>
 
-        `;
+    </div>
 
-    });
+    `;
+
+});
+```
 
 }
 
 function renderCatalog(catalog,container){
 
-    container.innerHTML="";
+```
+container.innerHTML="";
 
-    catalog.forEach(item=>{
+catalog.forEach(item=>{
 
-        container.innerHTML+=`
+    container.innerHTML+=`
 
-        <div class="product">
+    <div class="product">
 
-            <img src="${item.image}" alt="${item.title}" onclick="openImage('${item.image}')">
+        <img src="${item.image}" alt="${item.title}" onclick="openImage('${item.image}')">
 
-            <div class="productContent">
+        <div class="productContent">
 
-                <h3>${item.title}</h3>
+            <h3>${item.title}</h3>
 
-                <p>
+            <p>
 
-                Изберете желания дизайн по номер
-                от каталога и го посочете при
-                поръчката.
+            Изберете желания дизайн по номер
+            от каталога и го посочете при
+            поръчката.
 
-                </p>
+            </p>
 
-                <div class="price">${item.price}</div>
-
-            </div>
+            <div class="price">${item.price}</div>
 
         </div>
 
-        `;
+    </div>
 
-    });
+    `;
+
+});
+```
 
 }
 
 function addToCart(product){
 
-    const existing = cart.find(item => item.id === product.id);
+```
+const existing = cart.find(item => item.id === product.id);
 
-    if(existing){
-        existing.quantity++;
-    }else{
-        cart.push({
-            ...product,
-            quantity:1
-        });
-    }
+if(existing){
+    existing.quantity++;
+}else{
+    cart.push({
+        ...product,
+        quantity:1
+    });
+}
 
-    document.getElementById("count").innerHTML =
-        cart.reduce((sum,item)=>sum+item.quantity,0);
+document.getElementById("count").innerHTML =
+    cart.reduce((sum,item)=>sum+item.quantity,0);
 
-    renderCart();
+renderCart();
+```
 
 }
 
 document.getElementById("cartBtn").onclick = function () {
 
-    renderCart();
+```
+renderCart();
 
-    document.getElementById("cartModal").style.display = "flex";
+document.getElementById("cartModal").style.display = "flex";
+```
 
 };
 
 function closeCart(){
 
-    document.getElementById("cartModal").style.display = "none";
+```
+document.getElementById("cartModal").style.display = "none";
+```
 
 }
 
 function renderCart(){
 
-    const cartItems=document.getElementById("cartItems");
+```
+const cartItems=document.getElementById("cartItems");
 
-    const total=document.getElementById("cartTotal");
+const total=document.getElementById("cartTotal");
 
-    cartItems.innerHTML="";
+cartItems.innerHTML="";
 
-    let sum=0;
+let sum=0;
 
-    if(cart.length===0){
+if(cart.length===0){
 
-        cartItems.innerHTML="<p>Количката е празна.</p>";
+    cartItems.innerHTML="<p>Количката е празна.</p>";
 
-        total.innerHTML="0 €";
+    total.innerHTML="0 €";
 
-        return;
+    return;
 
-    }
+}
 
-    cart.forEach((item,index)=>{
+cart.forEach((item,index)=>{
 
-        const price=parseFloat(item.price);
+    const price=parseFloat(item.price);
 
-        sum += price * item.quantity;
+    sum += price * item.quantity;
 
-        cartItems.innerHTML+=`
+    cartItems.innerHTML+=`
 
-        <div class="cartItem">
+    <div class="cartItem">
 
-            <div>
+        <div>
 
-                <strong>${item.name}</strong><br>
+            <strong>${item.name}</strong><br>
 
-                ${item.quantity} × ${item.price}
-
-            </div>
-
-            <div>
-
- <button onclick="changeQuantity(${index},-1)">−</button>
-
-<button onclick="changeQuantity(${index},1)">+</button>
-
-<button onclick="removeItem(${index})">🗑</button>
-
-</div>
+            ${item.quantity} × ${item.price}
 
         </div>
 
-        `;
+        <div>
+```
 
-    });
+−
 
-    total.innerHTML=sum.toFixed(2)+" €";
+\+
+
+🗑
+
+```
+    </div>
+
+    `;
+
+});
+
+total.innerHTML=sum.toFixed(2)+" €";
+```
 
 }
 
 function removeItem(index){
 
-    cart.splice(index,1);
+```
+cart.splice(index,1);
 
-    document.getElementById("count").innerHTML =
-    cart.reduce((sum,item)=>sum+item.quantity,0);
+document.getElementById("count").innerHTML =
+cart.reduce((sum,item)=>sum+item.quantity,0);
 
-    renderCart();
+renderCart();
+```
 
 }
 function changeQuantity(index,value){
 
-    cart[index].quantity += value;
+```
+cart[index].quantity += value;
 
-    if(cart[index].quantity<=0){
+if(cart[index].quantity<=0){
 
-        cart.splice(index,1);
+    cart.splice(index,1);
 
-    }
+}
 
-    document.getElementById("count").innerHTML =
-        cart.reduce((sum,item)=>sum+item.quantity,0);
+document.getElementById("count").innerHTML =
+    cart.reduce((sum,item)=>sum+item.quantity,0);
 
-    renderCart();
+renderCart();
+```
 
 }
 function openImage(src) {
-    document.getElementById("modalImage").src = src;
-    document.getElementById("imageModal").style.display = "flex";
+document.getElementById("modalImage").src = src;
+document.getElementById("imageModal").style.display = "flex";
 }
 
 function closeImage() {
-    document.getElementById("imageModal").style.display = "none";
+document.getElementById("imageModal").style.display = "none";
 }
 document.getElementById("sendOrderBtn").addEventListener("click", function () {
+if (sending) return;
+sending = true;
 
-    if(cart.length===0){
-        alert("Количката е празна.");
-        return;
-    }
+const btn = document.getElementById("sendOrderBtn");
+btn.disabled = true;
+btn.innerText = "Изпращане...";
+if(cart.length===0){
+alert("Количката е празна.");
+return;
+}
 
-    const customerName = document.getElementById("customerName").value.trim();
-    const customerPhone = document.getElementById("customerPhone").value.trim();
-    const customerEmail = document.getElementById("customerEmail").value.trim();
-    const customerAddress = document.getElementById("customerAddress").value.trim();
-    const customerNote = document.getElementById("customerNote").value.trim();
+```
+const customerName = document.getElementById("customerName").value.trim();
+const customerPhone = document.getElementById("customerPhone").value.trim();
+const customerEmail = document.getElementById("customerEmail").value.trim();
+const customerAddress = document.getElementById("customerAddress").value.trim();
+const customerNote = document.getElementById("customerNote").value.trim();
 
-    if(customerName==="" || customerPhone===""){
-        alert("Моля попълнете име и телефон.");
-        return;
-    }
+if(customerName==="" || customerPhone===""){
+    alert("Моля попълнете име и телефон.");
+    return;
+}
 
-    const order = cart.map(item =>
-        `${item.name} × ${item.quantity} - ${item.price}`
-    ).join("\n");
+const order = cart.map(item =>
+    `${item.name} × ${item.quantity} - ${item.price}`
+).join("\n");
 
-    const total = cart.reduce((sum,item)=>
-        sum + parseFloat(item.price) * item.quantity
-    ,0);
+const total = cart.reduce((sum,item)=>
+    sum + parseFloat(item.price) * item.quantity
+,0);
+```
 
 emailjs.send(
-    "service_w97mo77",
-    "template_tv00i1d",
-    {
-        customer_name: customerName,
-        customer_phone: customerPhone,
-        customer_email: customerEmail,
-        customer_address: customerAddress,
-        customer_note: customerNote,
-        order: order,
-        total: total.toFixed(2) + " €"
-    }
+"service\_w97mo77",
+"template\_tv00i1d",
+{
+customer\_name: customerName,
+customer\_phone: customerPhone,
+customer\_email: customerEmail,
+customer\_address: customerAddress,
+customer\_note: customerNote,
+order: order,
+total: total.toFixed(2) + " €"
+}
 )
 .then(function () {
 
-    alert("✅ Поръчката беше изпратена успешно!");
+```
+alert("✅ Поръчката беше изпратена успешно!");
 
-    cart = [];
+cart = [];
 
-    document.getElementById("count").innerHTML = "0";
+document.getElementById("count").innerHTML = "0";
 
-    renderCart();
+renderCart();
 
-    document.getElementById("orderForm").reset();
+document.getElementById("orderForm").reset();
 
-    closeCart();
+closeCart();
+```
 
 })
 .catch(function (error) {
 
-    console.error(error);
+```
+console.error(error);
 
-    alert("Грешка: " + JSON.stringify(error));
+alert("Грешка: " + JSON.stringify(error));
+```
 
 });
