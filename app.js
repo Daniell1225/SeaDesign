@@ -279,3 +279,5 @@ closeCart();
     alert("Грешка: " + JSON.stringify(error));
 
 });
+
+});
