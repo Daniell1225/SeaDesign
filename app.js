@@ -152,31 +152,22 @@ cart.forEach((item,index)=>{
 
     sum += price * item.quantity;
 
-    cartItems.innerHTML+=`
+cartItems.innerHTML += `
+<div class="cartItem">
 
-    <div class="cartItem">
-
-        <div>
-
-            <strong>${item.name}</strong><br>
-
-            ${item.quantity} × ${item.price}
-
-        </div>
-
-        <div>
-```
-
-−
-
-\+
-
-🗑
-
-```
+    <div>
+        <strong>${item.name}</strong><br>
+        ${item.quantity} × ${item.price}
     </div>
 
-    `;
+    <div>
+        <button onclick="changeQuantity(${index}, -1)">−</button>
+        <button onclick="changeQuantity(${index}, 1)">+</button>
+        <button onclick="removeItem(${index})">🗑</button>
+    </div>
+
+</div>
+`;
 
 });
 
@@ -283,10 +274,8 @@ closeCart();
 })
 .catch(function (error) {
 
-```
-console.error(error);
+    console.error(error);
 
-alert("Грешка: " + JSON.stringify(error));
-```
+    alert("Грешка: " + JSON.stringify(error));
 
 });
