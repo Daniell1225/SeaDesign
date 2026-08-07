@@ -22,41 +22,29 @@ renderCatalog(data.ponchoCatalog, ponchoProducts);
 
 });
 
-function renderProducts(products, container){
+function renderProducts(products, container) {
+    container.innerHTML = "";
 
-```
-container.innerHTML="";
+    products.forEach(product => {
+        container.innerHTML += `
+        <div class="product">
+            <img src="${product.image}" alt="${product.name}" onclick="openImage('${product.image}')">
 
-products.forEach(product=>{
+            <div class="productContent">
+                <h3>${product.name}</h3>
 
-    container.innerHTML+=`
+                <p>140 × 70 см<br>60% памук • 40% полиестер</p>
 
-    <div class="product">
+                <div class="price">${product.price}</div>
 
-        <img src="${product.image}" alt="${product.name}" onclick="openImage('${product.image}')">
-
-        <div class="productContent">
-
-            <h3>${product.name}</h3>
-
-            <p>140 × 70 см<br>60% памук • 40% полиестер</p>
-
-            <div class="price">${product.price}</div>
-
-            <button class="buyBtn"
-            onclick='addToCart(${JSON.stringify(product)})'>
-            Добави в количката
-            </button>
-
+                <button class="buyBtn"
+                    onclick='addToCart(${JSON.stringify(product)})'>
+                    Добави в количката
+                </button>
+            </div>
         </div>
-
-    </div>
-
-    `;
-
-});
-```
-
+        `;
+    });
 }
 
 function renderCatalog(catalog,container){
