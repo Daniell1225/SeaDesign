@@ -74,9 +74,20 @@ function renderCatalog(catalog, container){
 
                 <div class="price">${item.price}</div>
 
+               <button class="buyBtn"
+               onclick='addToCart({
+               id:"catalog-${item.title}",
+               name:"${item.title}",
+               price:"${item.price}",
+               image:"${item.image}",
+               catalog:true
+ })'>
+               Добави в количката
+               </button>
+
             </div>
 
-        </div>
+   </div>>
         `;
 
     });
