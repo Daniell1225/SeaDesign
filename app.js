@@ -87,7 +87,7 @@ function renderCatalog(catalog, container){
 
             </div>
 
-   </div>>
+   </div>
         `;
 
     });
