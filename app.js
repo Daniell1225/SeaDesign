@@ -243,8 +243,6 @@ document.getElementById("sendOrderBtn").addEventListener("click", function () {
         sum + parseFloat(item.price) * item.quantity
     ,0);
 
-    console.count("EMAIL SEND");
-
     emailjs.send(
     "service_w97mo77",
     "template_tv00i1d",
