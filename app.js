@@ -5,7 +5,6 @@ const kidsProducts = document.getElementById("kidsProducts");
 const ponchoProducts = document.getElementById("beddingProducts");
 
 let cart = [];
-let sending = false;
 
 fetch("products.json")
 .then(response => response.json())
@@ -237,18 +236,13 @@ function closeImage() {
 document.getElementById("imageModal").style.display = "none";
 }
 document.getElementById("sendOrderBtn").addEventListener("click", function () {
-if (sending) return;
-sending = true;
-
-const btn = document.getElementById("sendOrderBtn");
-btn.disabled = true;
-btn.innerText = "Изпращане...";
-if(cart.length===0){
-alert("Количката е празна.");
-return;
-}
 
 ```
+if(cart.length===0){
+    alert("Количката е празна.");
+    return;
+}
+
 const customerName = document.getElementById("customerName").value.trim();
 const customerPhone = document.getElementById("customerPhone").value.trim();
 const customerEmail = document.getElementById("customerEmail").value.trim();
